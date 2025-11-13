@@ -1,0 +1,132 @@
+:root {
+  interpolate-size: allow-keywords;
+  --color-black: 0, 0, 0;
+  --color-darker-grey: 34, 34, 34;
+  --color-dark-grey: 136, 136, 136;
+  --color-mid-grey: 224, 224, 224;
+  --color-light-grey: 242, 242, 242;
+  --color-lighter-grey: 250, 250, 250;
+  --color-white: 255, 255, 255;
+  --color-red: 255, 50, 90;
+  --color-red-extra-light: 255, 245, 247;
+  --color-red-light: 255, 227, 233;
+  --color-red-dark: 200, 0, 72;
+  --color-blue: 67, 196, 224;
+  --color-blue-light: 227, 246, 250;
+  --color-blue-dark: 0, 145, 176;
+  --color-green: 110, 194, 80;
+  --color-green-extra-light: 239, 255, 233;
+  --color-green-light: 219, 240, 211;
+  --color-green-dark: 39, 149, 22;
+  --color-orange: 255, 168, 0;
+  --color-orange-light: 255, 233, 191;
+  --color-orange-dark: 184, 99, 0;
+  --color-purple: 136, 80, 255;
+  --color-purple-light: 225, 211, 255;
+  --color-purple-dark: 94, 41, 205;
+  --color-beige: 244, 243, 237;
+  --color-beige-light: 249, 249, 246;
+  --color-beige-dark: 205, 190, 153;
+  --color-primary: rgba(var(--color-red), 1);
+  --color-primary-dark: rgba(var(--color-red-dark), 1);
+  --color-primary-disabled: #ffe3e9;
+  --color-danger: rgba(var(--color-red), 1);
+  --color-danger-dark: rgba(var(--color-red-dark), 1);
+  --color-info: rgba(var(--color-blue), 1);
+  --color-info-dark: rgba(var(--color-blue-dark), 1);
+  --color-success: rgba(var(--color-green), 1);
+  --color-success-light: rgba(var(--color-green-light), 1);
+  --color-warning: rgba(var(--color-orange), 1);
+  --color-warning-dark: rgba(var(--color-orange-dark), 1);
+  --color-background-white: rgba(var(--color-white), 1);
+  --color-background-black: rgba(var(--color-black), 1);
+  --color-background-darker-grey: rgba(var(--color-darker-grey), 1);
+  --color-background-dark-grey: rgba(var(--color-dark-grey), 1);
+  --color-background-midgrey: rgba(var(--color-mid-grey), 1);
+  --color-background-light-grey: rgba(var(--color-light-grey), 1);
+  --color-background-lighter-grey: rgba(var(--color-lighter-grey), 1);
+  --color-background-red: rgba(var(--color-red), 1);
+  --color-background-black-50: rgba(var(--color-black), 0.5);
+  --color-background-black-25: rgba(var(--color-black), 0.25);
+  --color-background-black-15: rgba(var(--color-black), 0.15);
+  --color-background-black-5: rgba(var(--color-black), 0.05);
+  --color-background-white-50: rgba(var(--color-white), 0.5);
+  --color-background-white-15: rgba(var(--color-white), 0.15);
+  --color-background-white-5: rgba(var(--color-white), 0.05);
+  --font-brand-regular: "Work Sans";
+  --font-accent: "Sharp Grotesk Medium";
+  --font-regular: var(--font-brand-regular);
+  --font-medium: "Work Sans Medium";
+  --font-signature: "Herr Von Muellerhoff", cursive;
+  --font-size-sm: 0.875rem;
+  --line-height-sm: calc(20 / 14);
+  --font-size-lg: 1.125rem;
+  --line-height-lg: calc(24 / 18);
+  --font-size-xs: 0.75rem;
+  --line-height-hint: calc(16 / 12);
+  --color-text-body: rgba(var(--color-black), 1);
+  --color-text-grey: #888;
+  --color-text-lighter-grey: rgba(var(--color-lighter-grey), 1);
+  --color-text-red: rgba(var(--color-red), 1);
+  --color-text-black: rgba(var(--color-black), 1);
+  --color-text-black-50: rgba(var(--color-black), 0.5);
+  --color-text-black-15: rgba(var(--color-black), 0.15);
+  --color-text-black-5: rgba(var(--color-black), 0.05);
+  --color-text-white: rgba(var(--color-white), 1);
+  --color-text-white-50: rgba(var(--color-white), 0.5);
+  --color-text-cta-white: rgba(var(--color-white), 1);
+  --color-text-cta-white-15: rgba(var(--color-white), 0.15);
+  --color-text-cta-black: rgba(var(--color-black), 1);
+  --color-text-cta-black-15: rgba(var(--color-black), 0.15);
+  --color-headline-black: var(--color-text-black);
+  --color-headline-black-50: var(--color-text-black);
+  --color-headline-black-15: var(--color-text-black);
+  --color-headline-black-5: var(--color-text-black);
+  --color-headline-white: var(--color-text-white);
+  --color-headline-white-50: var(--color-text-white);
+  --color-headline-white-15: var(--color-text-white);
+  --color-headline-white-5: var(--color-text-white);
+  --color-border: rgba(var(--color-mid-grey), 1);
+  --color-border-active: rgba(var(--color-black), 1);
+  --color-border-lighter-grey: rgba(var(--color-lighter-grey), 1);
+  --color-border-black: rgba(var(--color-black), 1);
+  --color-border-white: rgba(var(--color-white), 1);
+  --color-border-black-50: rgba(var(--color-black), 0.5);
+  --color-border-black-15: rgba(var(--color-black), 0.15);
+  --color-border-black-5: rgba(var(--color-black), 0.05);
+  --color-border-white-50: rgba(var(--color-white), 0.5);
+  --color-border-white-15: rgba(var(--color-white), 0.15);
+  --color-border-white-5: rgba(var(--color-white), 0.05);
+  --border-radius: 4px;
+  --border-radius-large: 8px;
+  --border-regular: 1px solid var(--color-border);
+  --border-active: 1px solid var(--color-border-active);
+  --box-shadow: 0px 24px 48px rgba(var(--color-black), 0.25);
+  --height-input: 44px;
+  --color-input-appearance: rgba(var(--color-white), 1);
+  /* font-family: var(--font-regular); */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-color-sliver {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

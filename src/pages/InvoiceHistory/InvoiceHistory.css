@@ -1,0 +1,24 @@
+.inv-history-section {
+    flex: 1.2;
+    padding: 2rem;
+    background: #fff;
+    min-width: 390px;
+}
+.inv-history-title {
+    font-weight: 400;
+    font-size: 2.4em;
+    letter-spacing: -2px;
+    line-height: 28px;
+}
+
+.inv-history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.inv-history-header-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

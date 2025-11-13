@@ -1,0 +1,31 @@
+.app-wrapper {
+  margin: 1rem;
+  margin-left: 16rem;
+  width: 100%;
+}
+.app-closed-wrapper {
+  margin-left: 4.5rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .app-wrapper {
+    margin-left: 0;
+    margin: 1rem;
+  }
+}
+
+.invoice2-flex-main {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  background: #fafafc;
+}
+
+.button {
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+}

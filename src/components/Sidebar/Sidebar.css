@@ -1,0 +1,213 @@
+.sidebar {
+    width: 260px;
+    background: rgb(132, 39, 255);
+    color: #fff;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.2s;
+}
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    /* Mobile toggle button */
+    .mobile-toggle-btn {
+        position: fixed;
+        top: 1px;
+        left: 15px;
+        z-index: 1000;
+        background: rgb(132, 39, 255);
+        color: white;
+        border: none;
+        padding: 8px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .mobile-toggle-btn.active {
+        top: 1px;
+        left: 261px;
+        transition: all 0.3s;
+    }
+
+    .mobile-toggle-btn:hover {
+        background: #a566ff;
+    }
+
+    /* Optional overlay behind sidebar */
+    .m-sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+    }
+    .m-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 100vh;
+        background: rgb(132, 39, 255);
+        transform: translateX(-100%);
+        transition: all 0.3s ease; /* always present */
+    }
+    .m-sidebar--open {
+        transform: translateX(0);
+    }
+
+    .m-sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.sidebar--closed {
+    width: 90px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    font-size: 1.1rem;
+}
+
+.sidebar--closed .sidebar-header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sidebar-logo {
+    /* color: #a466f8; */
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 0.75rem;
+}
+
+.sidebar--closed .sidebar-logo {
+    margin-right: 0;
+}
+
+.sidebar-title {
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+.sidebar--closed .sidebar-title {
+    display: none;
+}
+
+.sidebar-toggle {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.sidebar-section {
+    margin-bottom: 2rem;
+}
+
+.sidebar-section-title {
+    display: block;
+    /* color: #999; */
+    color: rgba(#fff, 0.5);
+    font-size: 0.85rem;
+    padding: 0 2rem 0.5rem 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.sidebar--closed .sidebar-section-title {
+    display: none;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition:
+        background 0.2s,
+        color 0.2s;
+}
+
+.sidebar--closed .sidebar-link {
+    justify-content: center;
+    padding: 0.75rem 0;
+    font-size: 1.3rem;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    /* background: #a466f8; */
+    background: #fff;
+    /* color: #fff; */
+    color: rgb(132, 39, 255);
+}
+
+.sidebar-icon {
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.sidebar--closed .sidebar-icon {
+    margin-right: 0;
+    font-size: 1.4rem;
+}
+.sidebar-user-image {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.75rem;
+    background: #222;
+    border: 2px solid #a466f8;
+}
+
+.sidebar--closed .sidebar-user-image {
+    margin-right: 0;
+    width: 36px;
+    height: 36px;
+}
+
+/* Keep sidebar always visible on desktop */
+@media (min-width: 769px) {
+    .mobile-toggle-btn {
+        display: none;
+    }
+
+    .m-sidebar-overlay {
+        display: none;
+    }
+    .m-sidebar {
+        display: none;
+    }
+}

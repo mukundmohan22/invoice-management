@@ -1,0 +1,51 @@
+.input-group-addon {
+    background: #e6e6e6; /* Example: remove grey background */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.12px solid #ececec;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0px;
+}
+.input-no-left-border {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group .input-group-addon + .form-control {
+    border-left: none; /* Example: remove border between symbol and input */
+}
+
+.invoice-new-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.invoice-new-header-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.invoice-btn {
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    border-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 18px;
+    padding: 0.5rem;
+    background: rgb(132, 39, 255);
+    border-bottom: 4px solid rgba(132, 39, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+    border-top: 0px;
+}
+
+.invoice-btn:hover {
+    border-bottom-width: 0;
+    border-top-width: 4px;
+}

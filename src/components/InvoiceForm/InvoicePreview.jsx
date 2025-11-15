@@ -1,4 +1,5 @@
 import { formatDate } from "../../Utils/Helper";
+import logo from "../../assets/logo.png";
 
 function InvoicePreview({ invoice }) {
   const currentCode = invoice.currency;
@@ -9,10 +10,15 @@ function InvoicePreview({ invoice }) {
       <h1 className="invoice-new-header">PDF preview</h1>
       <div className="invoice-preview-card">
         <div style={{ padding: "1rem" }}>
-          <h2 className="invoice-preview-heading">{invoice.type}</h2>
-          <p style={{ fontSize: "1em", marginBottom: "8px", color: "#222", letterSpacing: "1px", margin: 0 }}>
-            #{invoice.number} • {formatDate(invoice.date)}
-          </p>
+          <div className="invoice-preview-header">
+            <div>
+              <h2 className="invoice-preview-heading">{invoice.type}</h2>
+              <p style={{ fontSize: "1em", marginBottom: "8px", color: "#222", letterSpacing: "1px", margin: 0 }}>
+                #{invoice.number} • {formatDate(invoice.date)}
+              </p>
+            </div>
+            <img src={logo} alt="Logo" width={120} />
+          </div>
           <table className="invoice-preview-table">
             <tbody>
               <tr>

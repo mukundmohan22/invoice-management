@@ -29,3 +29,40 @@
   background: #fff;
   cursor: pointer;
 }
+
+@media print {
+  body {
+    margin: 0 !important;
+  }
+  .invoice-new-section {
+    display: none;
+  }
+  .invoice-new-header {
+    display: none;
+  }
+  .app-wrapper {
+    margin: 0 !important;
+  }
+  .invoice-preview-title {
+    display: none;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  .invoice-preview-section {
+    display: flex;
+    zoom: 1;
+    border: none;
+    min-width: 794px;
+    min-height: 1123px;
+  }
+  .mobile-toggle-btn {
+    display: none;
+  }
+  .m-sidebar-overlay {
+    display: none;
+  }
+  .app-closed-wrapper {
+    margin: 0 !important;
+  }
+}

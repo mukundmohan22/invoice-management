@@ -280,28 +280,6 @@ textarea::placeholder {
     padding-right: 2rem;
 }
 
-@media print {
-    body {
-        margin: 0 !important;
-    }
-    .invoice-new-section {
-        display: none;
-    }
-    .app-wrapper {
-        margin: 0 !important;
-    }
-    .invoice-preview-title {
-        display: none;
-    }
-    .sidebar {
-        display: none !important;
-    }
-    .invoice-preview-section {
-        display: flex;
-        zoom: 1;
-    }
-}
-
 textarea {
     resize: none;
     field-sizing: content;
@@ -313,6 +291,11 @@ textarea {
 .invoice-preview-due-balance {
     font-size: 24px;
     padding: 12px 0;
+}
+.invoice-preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {

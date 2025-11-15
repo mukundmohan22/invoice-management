@@ -6,9 +6,9 @@ function InvoicePreview({ invoice }) {
 
   return (
     <section id="print-section" className="invoice-preview-section">
-      <h1 className="invoice-preview-title">PDF preview</h1>
+      <h1 className="invoice-new-header">PDF preview</h1>
       <div className="invoice-preview-card">
-        <div style={{ padding: "32px 18px 18px 18px" }}>
+        <div style={{ padding: "1rem" }}>
           <h2 className="invoice-preview-heading">{invoice.type}</h2>
           <p style={{ fontSize: "1em", marginBottom: "8px", color: "#222", letterSpacing: "1px", margin: 0 }}>
             #{invoice.number} • {formatDate(invoice.date)}

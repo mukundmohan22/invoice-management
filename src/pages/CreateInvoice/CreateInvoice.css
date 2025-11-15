@@ -28,6 +28,7 @@ textarea::placeholder {
     justify-content: space-between;
     gap: 18px;
     margin-bottom: 1.25em;
+    flex-direction: row;
 }
 .invoice-form-row select,
 .invoice-form-row input {
@@ -70,6 +71,7 @@ textarea::placeholder {
     gap: 1.2em;
     align-items: center;
     padding: 7px 0;
+    flex-wrap: nowrap;
 }
 .invoice-item-desc {
     flex: 2.2;
@@ -311,4 +313,38 @@ textarea {
 .invoice-preview-due-balance {
     font-size: 24px;
     padding: 12px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .invoice-new-section {
+        flex: 1;
+        padding: 0.5rem;
+        max-width: 98vw;
+    }
+
+    .invoice-new-header {
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .invoice-form-row {
+        flex-direction: column;
+        width: 98%;
+    }
+    .invoice-form-row select,
+    .invoice-form-row input {
+        width: 100%;
+    }
+
+    .invoice-table-header,
+    .invoice-table-row {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: end;
+    }
+    .invoice-item-desc,
+    .header-desc {
+        flex: auto;
+    }
 }

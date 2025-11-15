@@ -17,6 +17,7 @@
 
 .invoice-new-header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.5rem;
@@ -48,4 +49,14 @@
 .invoice-btn:hover {
     border-bottom-width: 0;
     border-top-width: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .invoice-new-header {
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
 }

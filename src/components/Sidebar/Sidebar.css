@@ -19,7 +19,7 @@
     /* Mobile toggle button */
     .mobile-toggle-btn {
         position: fixed;
-        top: 1px;
+        top: 15px;
         left: 15px;
         z-index: 1000;
         background: rgb(132, 39, 255);
@@ -30,7 +30,7 @@
         cursor: pointer;
     }
     .mobile-toggle-btn.active {
-        top: 1px;
+        top: 15px;
         left: 261px;
         transition: all 0.3s;
     }

@@ -106,7 +106,7 @@ const Sidebar = ({ user, logout, open, setOpen }) => {
             </svg>
           )}
         </button>
-        <div className={`m-sidebar-overlay ${mobileOpen ? "active" : ""}`} onClick={() => mobileOpen(false)}>
+        <div className={`m-sidebar-overlay ${mobileOpen ? "active" : ""}`} onClick={() => setMobileOpen(false)}>
           <div className={`m-sidebar ${mobileOpen ? "m-sidebar--open" : ""}`}>
             <div className="sidebar-header">
               <img

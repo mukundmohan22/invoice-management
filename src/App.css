@@ -1,7 +1,7 @@
 .app-wrapper {
-  margin: 1rem;
+  padding: 1rem;
   margin-left: 16rem;
-  width: 100%;
+  background: #fafafc;
 }
 .app-closed-wrapper {
   margin-left: 4.5rem;
@@ -11,7 +11,7 @@
 @media screen and (max-width: 768px) {
   .app-wrapper {
     margin-left: 0;
-    margin: 1rem;
+    padding: 0.5rem;
   }
 }
 
